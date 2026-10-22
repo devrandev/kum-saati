@@ -33,6 +33,8 @@
 			isa = PBXGroup;
 			children = (
 				1CFAF081308A3A9E002DB662 /* Kum Saati */,
+                B10000000000000000000002 /* Tests */,
+                B1000000000000000000000A /* Tested Sources */,
 				1CFAF080308A3A9E002DB662 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +43,7 @@
 			isa = PBXGroup;
 			children = (
 				1CFAF07F308A3A9E002DB662 /* Kum Saati.app */,
+                B10000000000000000000003 /* KumSaatiTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,9 +89,10 @@
 				};
 			};
 			buildConfigurationList = 1CFAF07A308A3A9E002DB662 /* Build configuration list for PBXProject "Kum Saati" */;
-			developmentRegion = en;
+			developmentRegion = tr;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				tr,
 				en,
 				Base,
 			);
@@ -100,6 +104,7 @@
 			projectRoot = "";
 			targets = (
 				1CFAF07E308A3A9E002DB662 /* Kum Saati */,
+                B10000000000000000000001 /* KumSaatiTests */,
 			);
 		};
 /* End PBXProject section */
@@ -325,6 +330,52 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+/* XCTest target */
+B10000000000000000000064 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kum Saati/Timer/TimerModel.swift"; sourceTree = SOURCE_ROOT; };
+B100000000000000000000C8 = {isa = PBXBuildFile; fileRef = B10000000000000000000064; };
+B10000000000000000000065 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kum Saati/Timer/HistoryFilter.swift"; sourceTree = SOURCE_ROOT; };
+B100000000000000000000C9 = {isa = PBXBuildFile; fileRef = B10000000000000000000065; };
+B10000000000000000000066 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kum Saati/Persistence/CompletedRound.swift"; sourceTree = SOURCE_ROOT; };
+B100000000000000000000CA = {isa = PBXBuildFile; fileRef = B10000000000000000000066; };
+B10000000000000000000067 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kum Saati/Persistence/RoundHistoryStore.swift"; sourceTree = SOURCE_ROOT; };
+B100000000000000000000CB = {isa = PBXBuildFile; fileRef = B10000000000000000000067; };
+B10000000000000000000068 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kum Saati/Persistence/TimerSettings.swift"; sourceTree = SOURCE_ROOT; };
+B100000000000000000000CC = {isa = PBXBuildFile; fileRef = B10000000000000000000068; };
+B10000000000000000000069 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kum Saati/Resources/L10n.swift"; sourceTree = SOURCE_ROOT; };
+B100000000000000000000CD = {isa = PBXBuildFile; fileRef = B10000000000000000000069; };
+B1000000000000000000006A = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kum Saati/Circle/CircleStyle.swift"; sourceTree = SOURCE_ROOT; };
+B100000000000000000000CE = {isa = PBXBuildFile; fileRef = B1000000000000000000006A; };
+B1000000000000000000006B = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kum Saati/Circle/CircleView.swift"; sourceTree = SOURCE_ROOT; };
+B100000000000000000000CF = {isa = PBXBuildFile; fileRef = B1000000000000000000006B; };
+B10000000000000000000003 = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KumSaatiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+B10000000000000000000002 = {isa = PBXFileSystemSynchronizedRootGroup; path = Tests; sourceTree = "<group>"; };
+B1000000000000000000000A = {isa = PBXGroup; children = (B10000000000000000000064,B10000000000000000000065,B10000000000000000000066,B10000000000000000000067,B10000000000000000000068,B10000000000000000000069,B1000000000000000000006A,B1000000000000000000006B,); name = "Tested Sources"; sourceTree = "<group>"; };
+B10000000000000000000007 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (B100000000000000000000C8,B100000000000000000000C9,B100000000000000000000CA,B100000000000000000000CB,B100000000000000000000CC,B100000000000000000000CD,B100000000000000000000CE,B100000000000000000000CF,); runOnlyForDeploymentPostprocessing = 0; };
+B10000000000000000000008 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+B10000000000000000000009 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+B10000000000000000000001 = {isa = PBXNativeTarget; buildConfigurationList = B10000000000000000000004; buildPhases = (B10000000000000000000007,B10000000000000000000008,B10000000000000000000009,); buildRules = (); dependencies = (); fileSystemSynchronizedGroups = (B10000000000000000000002,); name = KumSaatiTests; productName = KumSaatiTests; productReference = B10000000000000000000003; productType = "com.apple.product-type.bundle.unit-test"; };
+B10000000000000000000004 = {isa = XCConfigurationList; buildConfigurations = (B10000000000000000000005,B10000000000000000000006,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+B10000000000000000000005 = {isa = XCBuildConfiguration; buildSettings = {
+ GENERATE_INFOPLIST_FILE = YES;
+ PRODUCT_BUNDLE_IDENTIFIER = "pomodoro.Kum-Saati.Tests";
+ PRODUCT_NAME = "$(TARGET_NAME)";
+ SWIFT_VERSION = 5.0;
+ SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+ SWIFT_APPROACHABLE_CONCURRENCY = YES;
+ CODE_SIGN_STYLE = Automatic;
+ LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@loader_path/../Frameworks", "@executable_path/../Frameworks",);
+ }; name = Debug; };
+B10000000000000000000006 = {isa = XCBuildConfiguration; buildSettings = {
+ GENERATE_INFOPLIST_FILE = YES;
+ PRODUCT_BUNDLE_IDENTIFIER = "pomodoro.Kum-Saati.Tests";
+ PRODUCT_NAME = "$(TARGET_NAME)";
+ SWIFT_VERSION = 5.0;
+ SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+ SWIFT_APPROACHABLE_CONCURRENCY = YES;
+ CODE_SIGN_STYLE = Automatic;
+ LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@loader_path/../Frameworks", "@executable_path/../Frameworks",);
+ }; name = Release; };
+
 	};
 	rootObject = 1CFAF077308A3A9E002DB662 /* Project object */;
 }

@@ -1,0 +1,12 @@
+# Derleme ve test çıktıları
+.build/
+.build-log.txt
+DerivedData/
+*.xcresult
+
+# Xcode kullanıcıya özel ayarlar
+xcuserdata/
+*.xcuserstate
+
+# macOS
+.DS_Store
